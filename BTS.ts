@@ -1,4 +1,9 @@
 import { Logger, LoggerFactory } from 'path/to/logger';
+
+interface IBST<T> {
+
+}
+
 class BST<T extends BST<any>> implements IBST<T> {
     private static readonly LOGGER: Logger = LoggerFactory.getLogger(BST);
 
